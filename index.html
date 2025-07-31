@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Jacob Dusca">
+	<meta name="description" content="PopStop is your one online stop for shopping
+	for sodas with the most flavor and fizz.">
+	<title>PopStop | Welcome!</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header id="mainHeader">
+		<div class="centContainer">
+			<div class="branding">
+				<h1>PopStop</h1>
+				<p>Your One Stop for Pop</p>
+			</div>
+			<nav id="mainNav">
+				<ul>
+					<li><a href="#" class="current">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div> <!-- centeContainer -->
+	</header>
+	<main id="mainContent">
+		<section class="hero">
+			<div id="heroAlpha">
+				<div class="centContainer">
+					<h1>Welcome to PopStop!</h1>
+					<p>Step into a world of fizz, flavor, and fun! At PopStop, we’re all about celebrating the joy of soda—bold bubbles, vibrant colors, and unforgettable tastes from around the globe. Whether you're browsing for your favorite brand or discovering something new, you're in the right place. So grab a drink, explore our collection, and let the good times pop!</p>
+				</div>
+			</div> <!-- centContainer -->
+		</section>
+
+		<section class="featuredProducts">
+			<div class="centContainer">
+				<h2>Fan Favorites</h2>
+				<div class="productGrid">
+					<div class="featuredSoda">
+						<img src="images/cocaColaBottle.webp" alt="Coca cola">
+						<div class="featuredCaption">
+							<h3>Coca Cola</h3>
+							<p>Original American cola circa the 1890s.</p>
+						</div>
+					</div>
+					<div class="featuredSoda">
+						<img src="images/mountainDewBottle.webp" alt="Mountain Dew">
+						<div class="featuredCaption">
+							<h3>Mountain Dew</h3>
+							<p>One of the top rated Citrus sodas.</p>
+						</div>
+					</div>
+					<div class="featuredSoda">
+						<img src="images/sunkistBottle.webp" alt="Sunkist">
+						<div class="featuredCaption">
+							<h3>Sunkist</h3>
+							<p>One of the best orange flavored sodas.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- centContainer -->
+		</section>
+
+		<section class="aboutPreview">
+			<div id="aboutAlpha">
+				<div class="centContainer">
+					<h2>What's PopStop?</h2>
+					<p>PopStop is your ultimate destination for all things soda! We’re a fun, colorful online shop serving up a wide variety of fizzy favorites—from classic colas to rare, retro, and international flavors you won’t find just anywhere. Whether you're a soda connoisseur or just looking to try something new and refreshing, PopStop delivers bold taste and bubbly excitement right to your doorstep.</p>
+					<a href="about.html" class="btn">Learn More</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="orderBanner">
+			<div class="orderAlpha">
+				<div class="centContainer">
+					<h2>Ready to Sip Something Wild?</h2>
+					<a href="order.html" class="btn">Order Online</a>
+				</div> <!-- end centContainer -->
+			</div>
+		</section>
+
+		<section class="newsletter">
+			<div class="centContainer">
+				<h3>Get the Latest Flavors First!</h3>
+				<form action="process.php" method="POST" class="sodaForm"> 
+					<label>Email: </label>
+					<input type="email" name="email" placeholder="Your Email">
+					<button type="submit">Subscribe</button>
+				</form>
+			</div> <!-- centContainer -->
+		</section>
+	</main>
+	<footer id="mainFooter">
+		<p>&copy; 2025 by Jacob Dusca</p>
+	</footer>
+</body>
+</html>
