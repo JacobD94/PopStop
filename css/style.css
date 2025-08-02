@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	font-family: "Bungee", Arial;
 }
+figure, figcaption {
+	margin: 0;
+	padding: 0;
+}
 p {
 	font-size: 18px;
 }
@@ -34,7 +38,7 @@ p {
 }
 .branding {
 	float: left;
-	margin-top: 10px;
+	margin-top: 0px;
 }
 #mainNav {
 	float: right;
@@ -256,6 +260,177 @@ p {
 .clearFootAbout p {
 	padding-bottom: 200px;
 }
+/* ---------------------------------
+						PRODUCTS PAGE            
+-----------------------------------*/
+.sodaSection h2 {
+	text-align: center;
+	padding: 40px 0px;
+}
+.colaSection {
+	background-color: #064073;
+}
+.colaSection h2 {
+	color: #fff;
+}
+.colaGallProperties figure {
+	border: 3px solid #D95204;
+}
+.colaGallProperties figcaption {
+	background-color: #F2B705;
+}
+.citrusSection {
+	background-color: #F2B705;
+}
+.citrusGallProperties figure {
+	border: 3px solid #064073;
+}
+.citrusGallProperties figcaption {
+	background-color: #D95204;
+	color: #fff;
+}
+.rootBeerSection {
+	background-color: #D98E04;
+}
+.rootBeerGallProperties  figure {
+	border: 3px solid #590212;
+}
+.rootBeerGallProperties figcaption{
+	background-color: #064073;
+	color: #fff;
+}
+.creamGallProperties figure {
+	border: 3px solid #D98E04;
+}
+.creamGallProperties figcaption {
+	background-color: #590212;
+	color: #fff;
+}
+.orangeSection {
+	background-color: #D95204;
+	color: #fff;
+}
+.orangeGallProperties figure {
+	border: 3px solid #F2B705;
+}
+.orangeGallProperties figcaption {
+	background-color: #064073;
+	color: #fff;
+}
+.grapeSection {
+	background-color: #064073;
+	color: #fff;
+}
+.grapeGallProperties figure {
+	border: 3px solid #590212;
+}
+.grapeGallProperties figcaption {
+	background-color: #F2B705;
+	color: #000;
+}
+.strawberryCherrySection {
+	background-color: #e7002b;
+	color: #fff;
+}
+.strawberryCherryGallProperties figure {
+	border: 3px solid #064073;
+}
+.strawberryCherryGallProperties figcaption {
+	background-color: #590212;
+	color: #fff;
+}
+.sodaGallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 40px 0px;
+}
+.sodaGallery figure {
+	width: 20%;
+	box-sizing: border-box;
+	margin: 30px;
+	border-radius: 20px;
+}
+.sodaGallery figure img {
+	width: 100%;
+	display: block;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+
+}
+.sodaGallery figcaption {
+	font-family: "Bungee";
+	text-align: center;
+	border-bottom-right-radius: 16px;
+	border-bottom-left-radius: 16px;
+	padding: 10px 0px;
+}
+/* ---------------------------------
+						CONTACT PAGE            
+-----------------------------------*/
+#myForm {
+	font-family: "Bungee";
+}
+#myForm h2 {
+	text-align: center;
+	padding: 40px 0px 20px 0px;
+}
+#myForm fieldset {
+	text-align: center;
+	border: none;
+}
+#myForm #textForms label {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#myForm #textForms input,
+#myForm #textForms textarea {
+	width: 300px;
+	padding: 10px;
+	border-radius: 20px;
+	border: 2px solid #F2B705;
+	background-color: #064073;
+	color: #fff;
+}
+#myForm #textForms textarea {
+	height: 150px;
+}
+#myForm #favFlavor .flexContainer,
+#myForm #favSodaType .flexContainer {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
+#myForm #favFlavor legend,
+#myForm #favSodaType legend,
+#myForm #favSodaCompany legend {
+	padding: 40px 0px;
+}
+#myForm #favFlavor input,
+#myForm #favSodaType input,
+#myForm #favSodaCompany #company {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#myForm button {
+	padding: 10px;
+	border-radius: 20px;
+	display: block;
+	margin: 20px auto 40px auto;
+	background-color: #540211;
+	border: 2px solid #F2B705;
+	color: #fff;
+}
+@media (max-width: 1073px) {
+	/* ---------------------------------
+						Contact Page            
+	-----------------------------------*/
+	#makeSmaller {
+
+	}
+}
 @media (max-width: 847px) {
 	.branding,
 	#mainNav {
@@ -287,6 +462,29 @@ p {
 	.blueBG {
 		margin-top: 20px;
 	}
+	.clearFootAbout p {
+		padding-bottom: 0px;
+	}
+		/* ---------------------------------
+						Products Page            
+	-----------------------------------*/
+	.sodaSection h2 {
+		padding: 20px 0px;
+	}
+	.sodaGallery {
+		padding: 20px 0px;
+	}
+	.sodaGallery figure {
+		width: 40%;
+	}
+		/* ---------------------------------
+						Contact Page            
+	-----------------------------------*/
+	#myForm #favFlavor .flexContainer,
+#myForm #favSodaType .flexContainer {
+	flex-direction: column;
+	}
+	
 }
 @media (max-width: 560px) {
 	#mainNav {
@@ -323,6 +521,18 @@ p {
 		box-sizing: border-box;
 		padding: 10px;
 	}
+	.clearFootAbout p {
+		padding: 0;
+	}
+		/* ---------------------------------
+						ABOUT PAGE            
+	-----------------------------------*/
+	.sodaGallery figure {
+		width: 100%;
+	}
+	/* ---------------------------------
+						Contact Page            
+	-----------------------------------*/
 }
 @media (max-width: 375px) {
 	.hero h1 {
@@ -337,5 +547,17 @@ p {
 	}
 	.aboutPreview p {
 		font-size: 17px;
+	}
+	/* ---------------------------------
+						Contact Page            
+	-----------------------------------*/
+	#myForm #textForms {
+		width: 100%;
+		position: relative;
+		right: 10px;
+	}
+	#myForm #textForms input,
+	#myForm #textForms textarea {
+		width: 100%;
 	}
 }

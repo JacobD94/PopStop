@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Jacob Dusca">
+  <meta name="description" content="PopStop is your one online stop for shopping
+  for sodas with the most flavor and fizz.">
+  <title>PopStop | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="mainHeader">
+    <div class="centContainer">
+      <div class="branding">
+        <h1>PopStop</h1>
+        <p>Your One Stop for Pop</p>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#" class="current">Contact</a></li>
+        </ul>
+      </nav>
+    </div> <!-- centeContainer -->
+  </header>
+  <main id="mainContent">
+    <div class="centContainer">
+      <section class="formContainer">
+        <form action="process.php" method="POST" id="myForm">
+          <h2>Contact Us</h2>
+          <fieldset id="textForms">
+            <legend>Enter Contact Info &amp; Message</legend>
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Enter Message"></textarea>
+            </div>
+          </fieldset>
+          <fieldset id="favFlavor">
+            <legend>Favorite Soda Flavor</legend>
+            <div class="flexContainer">
+              <div>
+                <input type="radio" name="flavorType" id="cola" value="cola">
+                <label for="cola">Cola</label>
+              </div>
+              <div>
+                <input type="radio" name="flavorType" id="cirtus" value="citrus">
+                <label for="citurs">Citrus</label>
+              </div>
+              <div>
+                <input type="radio" name="flavorType" id="rootBeer" value="rootBeer">
+                <label for="rootBeer" id="makeSmaller">Root Beer</label>
+              </div>
+              <div>
+                <input type="radio" name="flavorType" id="cream" value="cream">
+                <label for="cream">Cream</label>
+              </div>
+
+              <div>
+                <input type="radio" name="flavorType" id="orange" value="orange">
+                <label for="orange">orange</label>
+              </div>
+
+              <div>
+                <input type="radio" name="flavorType" id="grape" value="grape">
+                <label for="grape">Grape</label>
+              </div>
+
+              <div>
+                <input type="radio" name="flavorType" id="strawberry" value="strawberry">
+                <label for="strawberry">Strawberry</label>
+              </div>
+
+              <div>
+                <input type="radio" name="flavorType" id="cherry" value="cherry">
+                <label for="cherry">Cherry</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset id="favSodaType">
+            <legend>Favorite Soda Type</legend>
+            <div class="flexContainer">
+              <div>
+                <input type="checkbox" name="type" id="cornSyrup" value="cornSyrup">
+                <label for="cornSyrup">Corn Syrup</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type" id="caneSugar" value="caneSugar">
+                <label for="caneSugar">Cane Sugar</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type" id="artSweet" value="artSweet">
+                <label for="artSweet">Artificial Sweetener (Diet)</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset id="favSodaCompany">
+            <legend>Favorite Soda Company</legend>
+            <select id="company" name="company">
+              <option value="coca-cola">Coca-Cola Co.</option>
+              <option value="pepsi">PepsiCo, Inc.</option>
+              <option value="keurig">Keurig/Dr. Pepper</option>
+              <option value="national">National Beverage Corp.</option>
+              <option value="jones">Jones Soda Co.</option>
+            </select>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div><!-- end of centContainer-->
+  </main>
+  <footer id="mainFooter" class="clearFootAbout">
+    <p>&copy; 2025 by Jacob Dusca</p>
+  </footer>
+</body>
 </html>
