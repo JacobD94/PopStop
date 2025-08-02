@@ -207,6 +207,55 @@ p {
 	color: #fff;
 	text-align: center;
 }
+/* ---------------------------------
+						ABOUT PAGE            
+-----------------------------------*/
+.jamieRamirezPic {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: 2px solid #064073;
+}
+#about {
+	padding: 40px 10px;
+	width: 70%;
+	box-sizing: border-box;
+	float: left;
+}
+#about h2 {
+	padding-bottom: 20px;
+}
+.blueBG {
+	background-color: #064073;
+	color: #fff;
+	border-radius: 20px;
+	padding: 20px;
+}
+.orangeBG {
+	background-color: #D95204;
+	color: #fff;
+	border-radius: 15px;
+	padding: 10px;
+}
+#aboutVideo {
+	margin: 20px auto;
+	width: 100%;
+}
+#whatWeDo {
+	padding: 40px 10px;
+	width: 30%;
+	float: right;
+	box-sizing: border-box;
+}
+#whatWeDo h3 {
+	padding-bottom: 20px;
+}
+.clearFootAbout {
+	clear: both;
+}
+.clearFootAbout p {
+	padding-bottom: 200px;
+}
 @media (max-width: 847px) {
 	.branding,
 	#mainNav {
@@ -227,6 +276,17 @@ p {
 	.aboutPreview h2 {
 		padding-top: 75px;
 	}
+	/* ---------------------------------
+						ABOUT PAGE            
+	-----------------------------------*/
+	#about,
+	#whatWeDo {
+		float: none;
+		width: 100%;
+	}
+	.blueBG {
+		margin-top: 20px;
+	}
 }
 @media (max-width: 560px) {
 	#mainNav {
@@ -243,6 +303,25 @@ p {
 	}
 	.newsletter input {
 		margin-bottom: 10px;
+	}
+	/* ---------------------------------
+						ABOUT PAGE            
+	-----------------------------------*/
+	#about h2 {
+		text-align: center;
+	}
+	.jamieRamirezPic {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	#whatWeDo h3 {
+		text-align: center;
+	}
+	.blueBG {
+		box-sizing: border-box;
+		padding: 10px;
 	}
 }
 @media (max-width: 375px) {
